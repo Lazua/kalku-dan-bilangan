@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function nunya() {
+            var a = document.ba.T1.value
+
+            if (a > 92) {
+                document.ba.T2.value = "A"
+            } else if (a > 82) {
+                document.ba.T2.value = "B"
+            } else if (a > 74) {
+                document.ba.T2.value = "C"
+            } else if (a > 49) {
+                document.ba.T2.value = "D"
+            } else if (a > 48) {
+                document.ba.T2.value = "E"
+            }
+
+        }
+
+
+
+    </script>
+</head>
+
+<body>
+    <center>
+    <form method="post" name="ba">
+        
+        <table border="1" width="15%" style="border-collapse: collapse;" cellpadding="5">
+            <thead>
+                <th rowspan="2">Penilaian</th>
+            </thead>
+            <tbody>
+                <tr>
+        <td><p>Nilai: <input type="text" size="15px" name="T1"><br></p>
+        
+       <p>Hasil: <input type="text" name="T2" size="15px"> </p></td>
+    </tr>
+    <tr>
+        <td rowspan="2"><p align="center"><input type="button" value="Check" onclick=nunya()></p></td>
+    </tr>
+
+    </tbody>
+    </table>
+
+
+    </form>
+</center>
+
+</body>
+
+</html>

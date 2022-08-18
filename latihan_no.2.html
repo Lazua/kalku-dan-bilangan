@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+        function tambah() {
+           var a = document.kal.B1.value
+           var b = document.kal.B2.value
+            c = parseInt(a) + parseInt(b)
+            kal.JA.value = c
+        }
+
+        function kali() {
+            a = document.kal.B1.value
+            b = document.kal.B2.value
+            c = a * b
+
+            document.kal.JA.value = c
+        }
+
+        function kurang() {
+            a = kal.B1.value
+            b = kal.B2.value
+            c = a - b
+            kal.JA.value = c
+        }
+        function Bagi() {
+            a = kal.B1.value
+            b = kal.B2.value
+            c = a / b
+            kal.JA.value = c
+        }
+        function reset() {
+            kal.B1.value = ""
+            kal.B2.value = ""
+            kal.JA.value = ""
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+    <form name="kal">
+        <center>
+            <table border="1" width="20%" cellpadding="5" style="border-collapse: collapse;">
+                <thead>
+                    <th rowspan="6">JS Calcu</th>
+                    
+                </thead>
+                <tbody>
+                    <tr>
+                    <td rowspan="1" align="center"><p>Bilangan 1: <input type="text" name="B1"></p>
+                    <p >Bilangan 2: <input type="text" name="B2"></p>
+               
+                    <br>
+                    <p >Hasil: <input value="" type="text" name="JA"></p>
+                </td>
+            </tr>
+            <tr align="center">
+                    <td><p><input type="button" value="*" onclick=kali()>
+                    <input type="button" value="-" onclick=kurang()>
+                    <input type="button" value="/" onclick=Bagi()>
+                   <input type="button" value="+" onclick=tambah()>
+                    <input type="button" value="Reset" onclick=reset()></p></td>
+                </tr>
+                </tbody>
+            </table>
+        </center>
+    </form>
+
+
+</body>
+
+</html>
